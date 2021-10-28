@@ -15,7 +15,9 @@
     position: relative;
 }
 .site-header h1 {
-    font-size: 8rem;
+    opacity: 0;    
+    overflow: hidden;
+    font-size: 10rem;
     position: relative;
     display: inline-block;
 }
