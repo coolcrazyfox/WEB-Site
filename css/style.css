@@ -78,4 +78,18 @@
     100% {
         top: -115px;
     }
-}    
+}
+
+.pumpkin {
+    width: 400px;
+    height: 300px;
+    position: absolute;
+    background-image: url('pumpkin.png');
+    background-position-y: 65%;
+    background-size: contain;
+    background-repeat: no-repeat;
+    left: 20px;
+    bottom: 4px;
+    cursor: pointer;
+
+}
