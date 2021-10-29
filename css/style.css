@@ -102,7 +102,22 @@
 
 @keyframes header-animation-pumpkin {
     0%{
-        left: -300%;       
+        left: -300%;
+    }
+    30%{
+        left: 0px;
+    }    
+    40%{
+        left: 4px;
+    }
+    50%{
+        left: -9px;
+    }    
+    60%{
+        left: 7px;
+    }
+    70%{
+        left: 19px;
     }
     80%{
         left: 28px;
