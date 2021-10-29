@@ -11,6 +11,14 @@ function scarySound() {
 }
 spider.onclick =scarySound;
 
+function scarySoundToPumpkin() {
+    const audio2 = new Audio();
+    audio2.preload = 'auto';
+    audio2.src = 'first.mp3';
+    audio2.play();
+    
+}
+pumpkin.onclick = scarySoundToPumpkin;
 
 document.querySelector('.halloween-on').onchange =function(){
     if (this.checked) {
