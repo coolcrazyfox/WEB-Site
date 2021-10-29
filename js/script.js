@@ -24,6 +24,7 @@ document.querySelector('.halloween-on').onchange =function(){
     if (this.checked) {
         header.classList.add('site-header-bg');
         spider.classList.add('spider-animation');
+        pumpkin.classList.add('pumpkin-animation');
     }
     else {
         header.classList.remove('site-header-bg');
