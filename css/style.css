@@ -99,3 +99,15 @@
     animation-duration: 15s;
     animation-fill-mode: forwards;
 }
+
+@keyframes header-animation-pumpkin {
+    0%{
+        left: -300%;       
+    }
+    80%{
+        left: 28px;
+    }
+    100% {
+        left: 20px;
+    }
+}
