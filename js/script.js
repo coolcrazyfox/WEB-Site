@@ -1,5 +1,6 @@
 const header = document.querySelector('.site-header');
 const spider = document.querySelector('.spider');
+const pumpkin = document.querySelector('.pumpkin');
 
 function scarySound() {
     const audio = new Audio();
