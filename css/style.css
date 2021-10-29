@@ -92,5 +92,10 @@
     left: -300px;
     bottom: 4px;
     cursor: pointer;
+}
 
+.pumpkin-animation {
+    animation-name: header-animation-pumpkin;
+    animation-duration: 15s;
+    animation-fill-mode: forwards;
 }
