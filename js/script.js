@@ -29,6 +29,7 @@ document.querySelector('.halloween-on').onchange =function(){
     else {
         header.classList.remove('site-header-bg');
         spider.classList.remove('spider-animation');
+        pumpkin.classList.remove('pumpkin-animation');
 
     }
 }
