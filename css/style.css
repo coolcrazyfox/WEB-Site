@@ -107,23 +107,32 @@
     0%{
         left: -300%;
     }
-    30%{
+    10%{
+        left: -60px;
+    }    
+    20%{
         left: 0px;
     }    
+    30%{
+        left: 50px;
+    }    
     40%{
-        left: 4px;
+        left: -20px;
     }
     50%{
-        left: -9px;
+        left: 50px;
     }    
     60%{
-        left: 7px;
+        left: -28px;
     }
     70%{
-        left: 19px;
+        left: 40px;
     }
     80%{
-        left: 28px;
+        left: 0px;
+    }
+    90%{
+        left: 200px;
     }
     100% {
         left: 20px;
