@@ -7,6 +7,7 @@
    
     margin: 5px auto;
 }
+
 .site-header{
     border: 1px solid #a19999;
     padding: 10px;
@@ -14,13 +15,16 @@
     margin-bottom: 30px;
     position: relative;
 }
+
 .site-header h1 {
     opacity: 0;    
     overflow: hidden;
     font-size: 10rem;
     position: relative;
     display: inline-block;
+    object-fit: cover;
 }
+
 .site-header-bg {
     background: url('main_img.jpg');
     background-size: cover;
@@ -39,7 +43,6 @@
     100%{
         background-position-y: 80%;
     }
-
 }
 
 .spider {
