@@ -57,7 +57,7 @@
 
 .spider-animation {
     animation-name: header-animation-spider;
-    animation-duration: 5s;
+    animation-duration: 15s;
     animation-fill-mode: forwards;
 
 }
