@@ -146,6 +146,7 @@
 }
 
 .boximg{
+    position: relative;
     font-family: Arial, Helvetica, sans-serif;
     width: 500px;
     height: 300px;
@@ -156,6 +157,7 @@
 
 .boximg img{
     height: 300px;
+    transition: .5s;
 }
 
 .contaeners{
@@ -166,40 +168,43 @@
     left: 0;
 }
 
-.contaeners::before, .contaeners::after{
+.contaeners:before, .contaeners:after{
     content: '';
     width: 300px;
     height: 300px;
     position: absolute;
     top: 0;
     left: 0;
-    background: blue;
+    background: rgb(224, 129, 92);
+    opacity: .1;
+    transition: 1s;
 }
 
-.contaeners::before{
+.contaeners:before{
     transform: translateX(-125%) rotate(45deg);
 }
 
-.contaeners::after{
+.contaeners:after{
     transform: translateX(195%) rotate(45deg);
 }
 .text{
-    color: cornsilk;
+    color: rgb(238, 237, 235);
     text-align: center ;
     position: absolute;
     top: 20%;
 }
 
 .text h1{
-    margin-bottom: 20px;
-    font-size: 30px;
+    margin-bottom: 32px;
+    font-size: 40px;
     transform: scale(0);
     transition: .5s;
+    z-index: 10;
 }
 
 .text p{
-    font-size: 10px;
-    margin: 0 100px;
+    font-size: 20px;
+    margin: 15px 154px;
     text-align: justify;
     transform: scale(2);
     transition: .5s;
@@ -209,19 +214,19 @@
 a.bt{
     position: absolute;
     top: 100%;
-    left: 69%;
-    color: cornsilk;
+    left: 37%;
+    color: rgb(175, 228, 179);
     text-decoration: none;
     text-transform: uppercase;
-    border: 2px solid white;
+    border: 2px solid rgb(240, 235, 235);
     padding: 10px 30px;
     border-radius: 8px;
-    /*opacity: 0;
-    transition: .2s ease-in-out;*/
+    opacity: 0;
+    transition: .2s ease-in-out;
     overflow: hidden;
 }
 a.bt:before{
-    /*content: '';*/
+    content: '';
     top: 85px;
     left: 186px;
     height: 50px;
@@ -234,6 +239,38 @@ a.bt:hover::before{
     left: -48px;
     transition: .5s ease-in-out;
 }
-a.bt :active{
+a.bt:active{
     border: 2px solid red;
+}
+
+.boximg:hover img{
+    transform: rotate(-30deg) scale(2);
+    filter: blur(2px);
+}
+
+.boximg:hover a.bt{
+    opacity: 1;
+    transition: 1s;
+}
+
+.boximg:hover .contaeners::before{
+    transform: translateX(92%) rotate(45deg) scale(2);
+    transition: .5s;
+    opacity: .6;
+}
+.boximg:hover .contaeners::after{
+    transform: translateX(-25%) rotate(45deg) scale(2);
+    transition: .5s;
+    opacity: .6;
+}
+
+.boximg:hover .text h1{
+    transform: scale(1);
+}
+.boximg:hover .text p{
+    transform: scale(1);
+    opacity: 1;
+}
+.boximg:hover{
+    border: 5px inset #ba7bab;
 }
