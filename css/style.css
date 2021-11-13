@@ -269,7 +269,7 @@ a.bt:active{
 }
 .boximg:hover .text p{
     transform: scale(1);
-    opacity: 1;
+    opacity: 2;
 }
 .boximg:hover{
     border: 5px inset #ba7bab;
